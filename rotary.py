@@ -31,6 +31,7 @@ GPIO.add_event_detect(encoder_pinA, GPIO.FALLING, callback=encoder_callback, bou
 
 # Run the script indefinitely
 try:
+    print("ok let's go!")
     while True:
         if counter != prev_counter:
             print("Counter value:", counter)  # Perform actions based on counter value
@@ -39,3 +40,6 @@ try:
 
 except KeyboardInterrupt:
     GPIO.cleanup()
+
+except:
+    print("Something went wrong :(")
