@@ -5,9 +5,9 @@ import time
 GPIO.setmode(GPIO.BCM)
 
 # Define GPIO pins for the rotary encoder
-encoder_pinA = 2
-encoder_pinB = 3
-switch_pin = 4
+encoder_pinA = 17
+encoder_pinB = 27
+switch_pin = 22
 
 # Set up encoder pins as inputs with pull-up resistors
 GPIO.setup(encoder_pinA, GPIO.IN, pull_up_down=GPIO.PUD_UP)
